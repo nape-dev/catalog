@@ -1,5 +1,5 @@
 apiVersion: 1.0.0
-kind: AssuranceProcessDefinition
+kind: AssuranceProcedureDefinition
 procedure:
   atrn: "nrn:procedure:nape/software-procedures:rust-ci/sourcecode-integration"
   short: "Rust CI Assurnace Procedure"
@@ -11,7 +11,7 @@ activity-tests:
     short: "Peer Review"
     description: "This activity verifies that all actions require for a successfull peer review were completed."
     expect-evidence:
-      - "./evidence/peer-review/peer-review.json"
+      - "./evidence/peer_review/peer_review.json"
     action-tests:
       - name: at-least-two-reviewers
         short: "Two (2) Reviewer Approval"
