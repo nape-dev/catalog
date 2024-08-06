@@ -1,18 +1,18 @@
 apiVersion: 1.0.0
-kind: AssuranceProcedureDefinition
+kind: AssuranceProcedure
 procedure:
-  atrn: "nrn:procedure:nape/software-procedures:rust-ci/sourcecode-integration"
+  nrn: "nrn:procedure:nape/software-procedures:rust-ci/sourcecode-integration"
   short: "Rust CI Assurnace Procedure"
   description: |
     "This is the complete procedure required to integrate a source code change for a rust application 
     back into the trunk, or main branch, of the source code repository."
-activity-tests:
+activity:
   - name: peer-review
     short: "Peer Review"
     description: "This activity verifies that all actions require for a successfull peer review were completed."
     expect-evidence:
       - "./evidence/peer_review/peer_review.json"
-    action-tests:
+    action:
       - name: at-least-two-reviewers
         short: "Two (2) Reviewer Approval"
         description: "There are at least two (2) peer reviews who approved the merge request."
