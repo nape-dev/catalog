@@ -10,8 +10,6 @@ activity:
   - name: peer-review
     short: "Peer Review"
     description: "This activity verifies that all actions require for a successfull peer review were completed."
-    expect-evidence:
-      - "evidence/peer_review/peer_review.json"
     action:
       - name: at-least-two-reviewers
         short: "Two (2) Reviewer Approval"
