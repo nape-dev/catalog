@@ -21,10 +21,3 @@ activity:
         description: "The person who initiated the merge request is not one of the people who approved the merge request."
         test: "activity/peer_review/requester_not_a_reviewer.py"
         evidence: "evidence/peer_review/peer_review.json"
-        test: "activity/peer_review/at_least_two_reviewers.py"
-        evidence: "evidence/peer_review/peer_review.json"
-      - name: requester-not-a-reviewer
-        short: "Requester is not Approver"
-        description: "The person who initiated the merge request is not one of the people who approved the merge request."
-        test: "activity/peer_review/requester_not_a_reviewer.py"
-        evidence: "evidence/peer_review/peer_review.json"
